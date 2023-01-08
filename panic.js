@@ -26,7 +26,17 @@ function panic(str){
     }
     
     arr = arr.join('')
-console.log(arr)
+    return arr
 }
 
-panic("may you be welcomed")
+console.log(panic("may you be welcomed"))
+
+/* Their solution
+function panic(str){
+    return str
+        .split(' ')
+        .join(' 😱 ')
+        .toUpperCase() + "!";
+}
+
+*/
