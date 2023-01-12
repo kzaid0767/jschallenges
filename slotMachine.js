@@ -33,3 +33,4 @@ fetch(food)
     .then(data => {
         getRandomFruits(data)
     })
+    .catch(err => console.log(err))
